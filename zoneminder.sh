@@ -63,7 +63,7 @@ export DEBIAN_FRONTEND="noninteractive"
 # Verificando se o usuário é Root, Distribuição é >=22.04 e o Kernel é >=4.15 <IF MELHORADO)
 # [ ] = teste de expressão, && = operador lógico AND, == comparação de string, exit 1 = A maioria dos erros comuns na execução
 clear
-if [ "$USUARIO" == "0" ] && [ "$UBUNTU" == "22.04" ] && [ "$KERNEL" == "4.15" ]
+if [ "$USUARIO" >= "0" ] && [ "$UBUNTU" >= "22.04" ] && [ "$KERNEL" >= "4.15" ]
 	then
 		echo -e "O usuário é Root, continuando com o script..."
 		echo -e "Distribuição é >= 22.04.x, continuando com o script..."
